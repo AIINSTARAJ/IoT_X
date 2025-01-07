@@ -8,21 +8,19 @@ void setup(){
 }
 
 void loop(){
-    switchState = digitalread(2);
+    switchState = digitalRead(2);
     if (switchState == LOW) { 
-    // the button is not pressed
-        digitalWrite(3, HIGH); // green LED
-        digitalWrite(4, LOW); // red LED
-        digitalWrite(5, LOW); // red LED
+        digitalWrite(3, HIGH); 
+        digitalWrite(4, LOW); 
+        digitalWrite(5, LOW); 
     } 
-    else { // the button is pressed
+    else { 
         digitalWrite(3, LOW); 
         digitalWrite(4, LOW);
         digitalWrite(5, HIGH);
-        delay(250); // wait for a quarter second
-        // toggle the LEDs
+        delay(250); 
         digitalWrite(4, HIGH); 
         digitalWrite(5, LOW);
-        delay(250); // wait for a quarter second
+        delay(250); 
     } 
-} // go back to the beginning of the loop
+}

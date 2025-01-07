@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-    switchState = digitalRead(switchPin);qaaaaaaao
+    switchState = digitalRead(switchPin);
     if (switchState == "LOW"){
         lcd.print("A.I Instaraj 🎫🎫")
     }
