@@ -31,7 +31,8 @@ void loop() {
             lcd.print(“The ball says:”);
             lcd.setCursor(0, 1);
 
-            switch(reply){
+            switch(reply)
+            {
 
                 case 0:
                 lcd.print(“Yes”);
