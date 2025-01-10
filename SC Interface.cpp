@@ -9,7 +9,8 @@ void setup(){
 
 void loop(){
     switchState = digitalRead(2);
-    if (switchState == LOW) { 
+    if (switchState == LOW) 
+    { 
         digitalWrite(3, HIGH); 
         digitalWrite(4, LOW); 
         digitalWrite(5, LOW); 
