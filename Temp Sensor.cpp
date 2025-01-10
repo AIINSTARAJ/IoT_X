@@ -1,5 +1,5 @@
 const int sensorpin = A0;
-const float base_temp = 20.0;
+const float base_temp = 25.0;
 
 void setup(){
     Serial.begin(9600);
@@ -17,7 +17,7 @@ void loop(){
 
     Serial.print(“, Volts: “);
     Serial.print(voltage);
-    Serial.print(“, degrees C: “);
+    Serial.print(“, degree C: “);
 
     float temperature = (voltage - .5) * 100;
 
