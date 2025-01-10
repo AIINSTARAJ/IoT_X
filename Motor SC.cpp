@@ -4,11 +4,13 @@ const int motorPin = 9;
 
 int switchState = 0; 
 
-void setup() {
+void setup() 
+{
     pinMode(motorPin, OUTPUT); 
     pinMode(switchPin, INPUT); 
 }
-void loop(){
+void loop()
+{
     switchState = digitalRead(switchPin);
 
     if (switchState == HIGH) { 
