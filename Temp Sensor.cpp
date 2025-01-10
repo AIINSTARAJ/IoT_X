@@ -8,7 +8,8 @@ void setup(){
     pinMode(4,OUTPUT);
 }
 
-void loop(){
+void loop()
+{
     int sensorval = analogread(AO);
     Serial.print("Sensor Value: ")
     Serial.print(sensorval)
