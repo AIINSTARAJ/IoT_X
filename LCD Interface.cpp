@@ -16,7 +16,8 @@ void setup()
     lcd.print(“Crystal Ball!”);
 }
 
-void loop() {
+void loop() 
+{
     switchState = digitalRead(switchPin);
     
     if (switchState != prevSwitchState)
