@@ -19,7 +19,8 @@ void setup()
 void loop() {
     switchState = digitalRead(switchPin);
     
-    if (switchState != prevSwitchState) {
+    if (switchState != prevSwitchState)
+    {
 
         if (switchState == LOW) { 
             reply = random(8)
