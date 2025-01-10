@@ -12,7 +12,6 @@ void loop(){
     int sensorval = analogread(AO);
     Serial.print("Sensor Value: ")
     Serial.print(sensorval)
-
     float voltage = (sensorVal/1024.0) * 5.0;
 
     Serial.print(“, Volts: “);
