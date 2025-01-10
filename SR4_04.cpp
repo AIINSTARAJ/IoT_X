@@ -17,22 +17,19 @@ void setup()
 void loop() 
 {
     digitalWrite( trigPin, LOW ); 
-    delay(2);
-    
+    delay(2);   
     digitalWrite( trigPin, HIGH );
     delay(10);
     digitalWrite( trigPin, LOW );
-  
-
     duration = 0;
     counter = 0;
     while( --counter!=0 )
     {
-            if( PINB & 2 ) 
-            {
-            time = micros();
-            break;
-            }
+        if( PINB & 2 ) 
+        {
+        time = micros();
+        break;
+        }
     }
     counter = 0;
     while( --counter!=0 )
