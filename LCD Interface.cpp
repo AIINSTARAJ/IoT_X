@@ -7,7 +7,8 @@ int switchState = 0;
 int prevSwitchState = 0;
 int reply;
 
-void setup() { 
+void setup() 
+{ 
     lcd.begin(16, 2);
     pinMode(switchPin,INPUT);
     lcd.print(“Ask the”);
