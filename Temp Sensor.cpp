@@ -1,7 +1,8 @@
 const int sensorpin = A0;
 const float base_temp = 25.0;
 
-void setup(){
+void setup()
+{
     Serial.begin(9600);
     pinMode(2,OUTPUT);
     pinMode(3,OUTPUT);
