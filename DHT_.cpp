@@ -10,14 +10,12 @@ void setup()
    Serial.begin(9600);
    Serial.println("DHTxx test!");
    delay( 100 );
-
    dht.begin();
 }
 
 void loop() 
 {
-   delay( 500 );
-   // Reading temperature or humidity takes about 250 milliseconds!
+   delay(250);
    float h = dht.readHumidity();
    float t = dht.readTemperature();
    
