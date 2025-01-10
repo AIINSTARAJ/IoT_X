@@ -22,7 +22,8 @@ void loop() {
     if (switchState != prevSwitchState)
     {
 
-        if (switchState == LOW) { 
+        if (switchState == LOW)
+        { 
             reply = random(8)
 
             lcd.clear();
